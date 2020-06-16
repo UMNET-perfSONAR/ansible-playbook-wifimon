@@ -1,0 +1,2 @@
+# Install required roles
+- src: https://github.com/UMNET-perfSONAR/ansible-role-template.git
