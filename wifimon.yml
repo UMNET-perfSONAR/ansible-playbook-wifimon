@@ -1,0 +1,9 @@
+# perfsonar.yml main perfSONAR config
+
+- name: template
+  tags: 
+    - template
+  hosts:
+    - wifimon
+  roles:
+    - ansible-role-template
