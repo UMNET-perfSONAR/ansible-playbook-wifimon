@@ -6,4 +6,4 @@
   hosts:
     - wifimon
   roles:
-    - ansible-role-template
+    - ansible-role-wifimon
