@@ -1,6 +1,9 @@
 # perfsonar.yml main perfSONAR config
 
 - name: template
+  become: yes
+  become_user: root
+  become_method: sudo
   tags: 
     - template
   hosts:
