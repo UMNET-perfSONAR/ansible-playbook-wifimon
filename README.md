@@ -5,8 +5,8 @@ template for Ansible playbooks
 Clone this repository:
 
 ```
-git clone https://github.com/UMNET-perfSONAR/ansible-playbook-template.git
-cd ansible-playbook-template
+git clone https://github.com/UMNET-perfSONAR/ansible-playbook-wifimon.git
+cd ansible-playbook-wifimon
 ```
 
 Get the required roles (ignore errors so we can run this multiple times):
@@ -37,5 +37,46 @@ ansible all -m ping
 Run the playbook:
 
 ```
-ansible-playbook template.yml
+ansible-playbook wifimon.yml
+```
+
+----------------------
+Developer Instructions
+----------------------
+
+template for Ansible playbooks
+
+**Quick Start**:
+
+Set up ssh keys with Github
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+Clone this repository:
+
+```
+git clone git@github.com:UMNET-perfSONAR/ansible-playbook-wifimon.git
+cd ansible-playbook-wifimon
+```
+
+Clone the required roles (ignore errors so we can run this multiple times):
+
+```
+cd roles
+git clone git@github.com:UMNET-perfSONAR/ansible-role-wifimon.git
+cd ..
+```
+
+Run Vagrant
+
+```
+vagrant up
+```
+
+Develop Role
+```
+vi roles/ansible-role-wifimon/tasks/main.yml
+vagrant provision
 ```
