@@ -1,0 +1,10 @@
+---
+# wifimon vagrant setup
+
+- hosts: wifimon
+  remote_user: vagrant
+  become: true
+  become_method: sudo
+  become_user: root
+  roles:
+    - ansible-role-wifimon
