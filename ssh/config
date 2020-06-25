@@ -1,7 +1,0 @@
-#
-# SSH Config for Ansible Controller
-#
-
-Host *
-    StrictHostKeyChecking no
-    UserKnownHostsFile /dev/null
