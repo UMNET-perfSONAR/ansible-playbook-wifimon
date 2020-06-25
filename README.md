@@ -81,3 +81,13 @@ Develop Role
 vi roles/ansible-role-wifimon/tasks/main.yml
 vagrant provision
 ```
+
+Check your work
+```
+vagrant ssh wifimon
+```
+
+Clean up when done
+```
+vagrant halt
+```
