@@ -66,6 +66,7 @@ Clone the required roles (ignore errors so we can run this multiple times):
 ```
 cd roles
 git clone git@github.com:UMNET-perfSONAR/ansible-role-wifimon.git
+git clone git@github.com:UMNET-perfSONAR/ansible-role-kibana.git
 cd ..
 ```
 
