@@ -1,6 +1,6 @@
 # perfsonar.yml main perfSONAR config
 
-- name: template
+- name: wifimon
   become: yes
   become_user: root
   become_method: sudo
@@ -10,3 +10,4 @@
     - wifimon
   roles:
     - ansible-role-wifimon
+    - ansible-role-kibana

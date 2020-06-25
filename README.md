@@ -44,6 +44,11 @@ ansible-playbook wifimon.yml
 Developer Instructions
 ----------------------
 
+```
+ssh its-perfsonar-bastion.dsc.umich.edu
+ssh 198.111.224.158
+```
+
 template for Ansible playbooks
 
 **Quick Start**:
@@ -79,6 +84,7 @@ vagrant up
 Develop Role
 ```
 vi roles/ansible-role-wifimon/tasks/main.yml
+vi roles/ansible-role-kibana/tasks/main.yml
 vagrant provision
 ```
 
