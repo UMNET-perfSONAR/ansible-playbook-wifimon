@@ -1,5 +1,5 @@
 
-# perfSONAR dev environment
+# WiFiMon dev environment
 #
 
 
@@ -10,9 +10,9 @@ hosts = [
       #[ "controller",           "10.0.0.10" ]
 ]
 
-# make this work properly
-# XXX automate UID
-private_network_name = "template-UID"
+
+private_network_name = "wifimon-"
+private_network_name << ENV['USER']
 
 etc_hosts = hosts.map { |host, ip| "#{ip} #{host}" }.join("\n")
 
