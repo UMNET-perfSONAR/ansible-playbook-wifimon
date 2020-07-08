@@ -7,5 +7,24 @@
   become_method: sudo
   become_user: root
   roles:
-    - ansible-role-wifimon
     - ansible-role-kibana
+    - ansible-elasticsearch
+    - ansible-role-wifimon
+  vars:
+    host_name: "localhost"
+    node_name: "wifimon"
+    es_config:
+      node.name: "{{ node_name }}"
+      cluster.name: "elasticsearch"
+      network.host: "{{ host_name }}"
+      discovery.seed_hosts: "{{ host_name }}"
+      cluster.initial_master_nodes: "{{ node_name }}"
+      xpack.ml.enabled: false
+      xpack.security.enabled: false
+      node.master: true
+      node.voting_only: false
+      node.data: true
+      node.ingest: true
+      node.ml: false
+      cluster.remote.connect: false
+
