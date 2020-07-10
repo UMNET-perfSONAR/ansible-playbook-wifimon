@@ -13,6 +13,9 @@
   vars:
     host_name: "localhost"
     node_name: "wifimon"
+    sha_key: "brendan"
+    wifimon_user: "wifimon_user"
+    wifimon_pass: "wifimonpass"
     es_config:
       node.name: "{{ node_name }}"
       cluster.name: "elasticsearch"
