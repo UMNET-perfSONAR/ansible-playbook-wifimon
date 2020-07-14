@@ -2,3 +2,4 @@
 - src: https://github.com/UMNET-perfSONAR/ansible-role-wifimon.git
 - src: https://github.com/UMNET-perfSONAR/ansible-role-kibana.git
 - src: https://github.com/elastic/ansible-elasticsearch.git
+- src: https://github.com/UMNET-perfSONAR/ansible-role-wifimonbuild.git

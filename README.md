@@ -73,6 +73,7 @@ cd roles
 git clone git@github.com:UMNET-perfSONAR/ansible-role-wifimon.git
 git clone git@github.com:UMNET-perfSONAR/ansible-role-kibana.git
 git clone git@github.com:elastic/ansible-elasticsearch.git
+git clone git@github.com:UMNET-perfSONAR/ansible-role-wifimonbuild.git
 cd ..
 ```
 
