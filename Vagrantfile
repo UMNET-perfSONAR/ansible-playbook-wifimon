@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
     config.vm.define name do |host|
       host.vm.provider "virtualbox" do |vb|
         vb.cpus = 2
-        vb.memory = 4096
+        vb.memory = 5120
         # Don't need the guest extensions on this host.
         if Vagrant.has_plugin?("vagrant-vbguest")
           config.vbguest.auto_update = false
@@ -53,6 +53,7 @@ Vagrant.configure("2") do |config|
 
       config.vm.provision "ansible" do |ansible|
 	ansible.verbose = "v"
+        #ansible.tags="wifimon"
 	ansible.playbook = "vagrant.yml"
       end
     end  # Config
