@@ -9,6 +9,7 @@
   roles:
     - ansible-role-kibana
     - ansible-elasticsearch
+    - ansible-role-wifimonbuild
     - ansible-role-wifimon
   vars:
     host_name: "localhost"
