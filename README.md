@@ -37,7 +37,7 @@ ansible all -m ping
 Run the playbook:
 
 ```
-ansible-playbook wifimon.yml
+ansible-playbook vagrant.yml
 ```
 
 ----------------------
