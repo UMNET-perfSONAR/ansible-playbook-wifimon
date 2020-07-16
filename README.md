@@ -28,16 +28,30 @@ Set up template variables by running the defaults.sh script and then editing:
 vi inventory/group_vars/all/template/*
 ```
 
-Use Ansible ping to verify connectivity to targets:
+If the machine is not running, start the Vagrant virtual environment.
+NOTE: This will also run the provisioning if the environment has not been created.
 
 ```
-ansible all -m ping
+vagrant up
 ```
 
-Run the playbook:
+If the virtual enivronment is running or you make a change to the ansible roles, then run provisioning step
 
 ```
-ansible-playbook vagrant.yml
+vagrant provision
+```
+
+To Stop the virtual environment
+
+```
+vagrant halt
+```
+
+To destroy the virtual environment
+WARNING: This will completely erase the virtual environment and all data on it!
+
+```
+vagrant destroy
 ```
 
 ----------------------
