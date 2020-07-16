@@ -1,4 +1,8 @@
-template for Ansible playbooks
+----------------------
+Overview
+----------------------
+
+This playbook will install and configure the wifimon analysis server on a vagrant virtual environment.
 
 **Quick Start**:
 
@@ -41,13 +45,13 @@ If the virtual enivronment is running or you make a change to the ansible roles,
 vagrant provision
 ```
 
-To Stop the virtual environment
+To stop the virtual environment:
 
 ```
 vagrant halt
 ```
 
-To destroy the virtual environment
+To destroy the virtual environment.
 WARNING: This will completely erase the virtual environment and all data on it!
 
 ```
