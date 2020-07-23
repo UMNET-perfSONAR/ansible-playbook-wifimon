@@ -1,0 +1,9 @@
+---
+# wifimon setup
+
+- hosts: wifimon-server
+  roles:
+    - ansible-role-kibana
+    - ansible-elasticsearch
+    - ansible-role-wifimonbuild
+    - ansible-role-wifimon
