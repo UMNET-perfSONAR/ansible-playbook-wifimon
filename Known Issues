@@ -1,0 +1,20 @@
+# Known Issues
+
+1. Maven fails on compilation step
+    - Re-running the task usually fixes it, otherwise have to step manually
+2. Python versioning issues
+    - Ansible wants use python2 instead of 3 and fails on installing python packages step
+    - Fix: Install setuptools for python2
+    - Set ansible python interperator in playbook variables
+3. Postgres peer authentication failing for user "postgres"
+    - Fix: Modify the pg_hba.conf file for postgres and change "peer" to "trust" for user postgres. Restart postgresql
+4. Kibana config issue
+    - /etc/kibana/kibana.yml config still has the elasticsearch on http://localhost:9200, if loclhost is NOT your host name, change it to be the FQDN of your elasticserach server.
+5. Make sure these ports are open:
+    - 5601: Kibana
+    - 9200, 9300: elasticsearch
+    - 8441, 9000: wifimon
+6. Wifimon ./start.sh task not starting wifimon agent
+    - Not entirely sure if it was just a one-time problem
+    - Fix: Starting the service manually works
+    
