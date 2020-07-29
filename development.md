@@ -27,6 +27,13 @@ Get other dependancies:
 ansible-galaxy install -r  requirements.yml --ignore-errors
 ```
 
+Configure Vagrant
+
+```
+vi Vagrantfile
+vi vagrant.yml
+```
+
 Run Vagrant
 
 ```
@@ -37,6 +44,10 @@ Develop Role
 ```
 vi roles/ansible-role-wifimon/tasks/main.yml
 vi roles/ansible-role-kibana/tasks/main.yml
+```
+
+Provision Changes
+```
 vagrant provision
 ```
 
