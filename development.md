@@ -2,6 +2,8 @@
 Developer Instructions
 ----------------------
 
+This is to support wifimon development using a virtual development environment in Vagrant
+
 **Quick Start**:
 
 Clone this repository:
