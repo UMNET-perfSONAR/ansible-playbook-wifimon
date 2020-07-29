@@ -14,4 +14,3 @@
 #ansible_become_method=sudo
 
 [wifimon_hosts]
-wifimon
