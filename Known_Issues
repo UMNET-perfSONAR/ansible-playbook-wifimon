@@ -14,7 +14,7 @@
     - 5601: Kibana
     - 9200, 9300: elasticsearch
     - 8441, 9000: wifimon
-6. Wifimon ./start.sh task not starting wifimon agent
-    - Not entirely sure if it was just a one-time problem
-    - Fix: Starting the service manually works
+6. Wifimon ./start.sh task not daemonized, will stop running when task is completed
+    - Temp Fix: manually run start.sh
+    - Better Solution: Daemonize agent so that it can run in background or as a systemctl/systemd service
     
