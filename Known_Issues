@@ -9,7 +9,7 @@
 3. Postgres peer authentication failing for user "postgres"
     - Fix: Modify the pg_hba.conf file for postgres and change "peer" to "trust" for user postgres. Restart postgresql
 4. Kibana config issue
-    - /etc/kibana/kibana.yml config still has the elasticsearch on http://localhost:9200, if loclhost is NOT your host name, change it to be the FQDN of your elasticserach server.
+    - /etc/kibana/kibana.yml config still has the elasticsearch on http://localhost:9200, if localhost is NOT your host name, change it to be the FQDN of your elasticsearch server.
 5. Make sure these ports are open:
     - 5601: Kibana
     - 9200, 9300: elasticsearch

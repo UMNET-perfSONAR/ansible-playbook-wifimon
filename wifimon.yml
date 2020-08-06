@@ -3,7 +3,7 @@
 
 - hosts: wifimon_server
   roles:
- #   - ansible-role-kibana
-  #  - ansible-elasticsearch
-   # - ansible-role-wifimonbuild
+    - ansible-role-kibana
+    - ansible-elasticsearch
+    - ansible-role-wifimonbuild
     - ansible-role-wifimon
