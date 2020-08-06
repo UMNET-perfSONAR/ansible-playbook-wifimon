@@ -17,6 +17,10 @@ private_network_name << ENV['USER']
 etc_hosts = hosts.map { |host, ip| "#{ip} #{host}" }.join("\n")
 
 Vagrant.configure("2") do |config|
+  
+  # Port forward
+  config.vm.network "forwarded_port", guest: 5601, host: 5601
+  config.vm.network "forwarded_port", guest: 8441, host: 8441
 
   # The default E1000 has a security vulerability.
   # this suppresses a Vagrant complaint
