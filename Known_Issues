@@ -1,7 +1,7 @@
 # Known Issues
 
 1. Maven fails on compilation step
-    - Re-running the task usually fixes it, otherwise have to step manually
+    - Re-running the task usually fixes it, otherwise have to complete step manually
 2. Python versioning issues
     - Ansible wants use python2 instead of 3 and fails on installing python packages step
     - Fix: Install setuptools for python2
